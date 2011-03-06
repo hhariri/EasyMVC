@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{49F52F9F-B869-4BE9-AA7B-FC6B7745FC6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMVC", "EasyMVC\EasyMVC.csproj", "{18B85428-46DE-4434-A050-8D262F9CAD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMVC.Specs", "EasyMVC.Specs\EasyMVC.Specs.csproj", "{BAB27FC8-FC93-4483-A199-4E8213FCDFA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F52F9F-B869-4BE9-AA7B-FC6B7745FC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F52F9F-B869-4BE9-AA7B-FC6B7745FC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F52F9F-B869-4BE9-AA7B-FC6B7745FC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F52F9F-B869-4BE9-AA7B-FC6B7745FC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B85428-46DE-4434-A050-8D262F9CAD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B85428-46DE-4434-A050-8D262F9CAD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B85428-46DE-4434-A050-8D262F9CAD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B85428-46DE-4434-A050-8D262F9CAD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB27FC8-FC93-4483-A199-4E8213FCDFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB27FC8-FC93-4483-A199-4E8213FCDFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB27FC8-FC93-4483-A199-4E8213FCDFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB27FC8-FC93-4483-A199-4E8213FCDFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\AutoReST.ndproj"
+	EndGlobalSection
+EndGlobal

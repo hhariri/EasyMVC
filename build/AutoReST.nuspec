@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>AutoReST</id>
+    <title>AutoReST</title>
+	<projectUrl>https://github.com/hhariri/AutoReST/</projectUrl>
+	<licenseUrl>https://github.com/hhariri/AutoReST/blob/master/LICENSE.TXT</licenseUrl>
+    <version>0.2</version>
+    <authors>Hadi Hariri</authors>
+    <description>AutoReST for ASP.NET MVC</description>
+    <language>en-US</language>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>

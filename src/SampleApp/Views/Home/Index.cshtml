@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hello @Model.FirstName @Model.LastName</h2>
+We hope that the weather at @Model.City, @Model.Country is beautiful today!
+
+<p>
+@foreach (var key in ViewContext.RouteData.Values.Keys) { 
+  @: @key = @ViewContext.RouteData.Values[key] <br />
+}
+</p>

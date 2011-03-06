@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="NuGet">
+  <PropertyGroup>
+    <ProjectFolder>..\src\</ProjectFolder>
+    <NuGetCommand>X:\Tools\Nuget\nuget.exe</NuGetCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <NuPackages Include="*.nupkg"/>
+  </ItemGroup>
+  <Target Name="Build">
+
+    <MSBuild Projects="$(ProjectFolder)\AutoReST.sln"/>
+  </Target>
+
+  <Target Name="NuGet" DependsOnTargets="Build">
+    <Exec Command="del @(NuPackages) /F /Q"/>
+    <Exec Command="$(NuGetCommand) pack"/>
+    
+  </Target>
+  
+</Project>
