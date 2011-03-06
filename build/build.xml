@@ -1,21 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="NuGet">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectFolder>..\src\</ProjectFolder>
-    <NuGetCommand>X:\Tools\Nuget\nuget.exe</NuGetCommand>
   </PropertyGroup>
-  <ItemGroup>
-    <NuPackages Include="*.nupkg"/>
-  </ItemGroup>
   <Target Name="Build">
-
-    <MSBuild Projects="$(ProjectFolder)\AutoReST.sln"/>
+    <MSBuild Projects="$(ProjectFolder)\EasyMVC.sln"/>
   </Target>
 
-  <Target Name="NuGet" DependsOnTargets="Build">
-    <Exec Command="del @(NuPackages) /F /Q"/>
-    <Exec Command="$(NuGetCommand) pack"/>
-    
+  <Target Name="Release">
+    <MSBuild Projects="$(ProjectFolder)\EasyMVC.sln" Properties="Configuration=Release;OutputPath=..\..\build\Release"/>
+    <Exec Command="NuGet pack ..\build\Package.nuspec -o ..\build\Release\"/>
   </Target>
-  
+
 </Project>

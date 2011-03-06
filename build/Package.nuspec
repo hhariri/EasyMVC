@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>EasyMVC</id>
+    <version>0.9.0</version>
+    <authors>Hadi Hariri</authors>
+    <owners>Hadi Hariri</owners>
+    <licenseUrl>https://github.com/hhariri/EasyMVC/blob/master/LICENSE.TXT</licenseUrl>
+    <projectUrl>https://github.com/hhariri/EasyMVC</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>An MVC Library to make ReST and Conneg and other things easy</description>
+    <tags>REST, MVC, ASP.NET MVC</tags>
+  </metadata>
+  <files>
+    <file src="Release\EasyMVC.dll" target="lib" />
+    <file src="Release\EasyMVC.pdb" target="lib" />
+  </files>
+</package>
